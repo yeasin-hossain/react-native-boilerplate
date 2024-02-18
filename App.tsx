@@ -36,7 +36,7 @@ function App(): React.JSX.Element {
           <Button title="Solid" />
           <Button color="error">Error</Button>
           <Icon reverse name="youtube" type="antdesign" color="#517fa4" />
-          <SmallButton />
+          <SmallButton title={'Yeasin'} size="md" color="success" />
         </View>
       </ScrollView>
     </SafeAreaView>

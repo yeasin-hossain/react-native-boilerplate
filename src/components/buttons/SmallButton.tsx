@@ -1,8 +1,8 @@
 import React from 'react';
-import {Button} from '@rneui/themed';
+import {Button, ButtonProps} from '@rneui/themed';
 
-function SmallButton() {
-  return <Button size="sm">Small</Button>;
+function SmallButton(props: ButtonProps) {
+  return <Button {...props} />;
 }
 
 export default SmallButton;
