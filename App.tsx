@@ -7,7 +7,8 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
+import {Button} from '@rneui/themed';
+import {Icon} from '@rneui/themed';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 function App(): React.JSX.Element {
@@ -31,6 +32,9 @@ function App(): React.JSX.Element {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Text>Hello</Text>
+          <Button title="Solid" />
+          <Button color="error">Error</Button>
+          <Icon reverse name="youtube" type="antdesign" color="#517fa4" />
         </View>
       </ScrollView>
     </SafeAreaView>
