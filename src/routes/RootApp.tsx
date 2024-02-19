@@ -3,13 +3,12 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import appRoutes from '@lib/routes';
 import AuthApp from './AuthApp';
 import AppScreenContainer from './AppScreenContainer';
-import {useSelector} from 'react-redux';
-import {RootState} from '@redux/store';
+import useGetAuthData from '@redux/hook/useGetAuthData';
 
 const Stack = createNativeStackNavigator();
 
 function RootApp() {
-  const {isLoggedIn} = useSelector((state: RootState) => state.auth);
+  const {isLoggedIn} = useGetAuthData();
   return (
     <Stack.Navigator
       initialRouteName={appRoutes.app}

@@ -11,9 +11,9 @@ const AppTab = createBottomTabNavigator();
 const AppScreenContainer = () => {
   return (
     <AppTab.Navigator
-      initialRouteName={appRoutes.analysis}
       screenOptions={{headerShown: false}}
-      tabBar={props => <TabBar {...props} />}>
+      tabBar={props => <TabBar {...props} />}
+      initialRouteName={appRoutes.analysis}>
       <AppTab.Screen name={appRoutes.trade} component={TradeScreen} />
       <AppTab.Screen name={appRoutes.analysis} component={AnalysisScreen} />
       <AppTab.Screen name={appRoutes.portfolio} component={PortfolioScreen} />
